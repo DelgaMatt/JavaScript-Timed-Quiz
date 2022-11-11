@@ -17,35 +17,38 @@
 </header>
 
 <body>
-    <div class="home">
-        <h1>API Quiz Challenge</h1>
-        <p>Lets test your Javascript knowledge. <br>
-            Try to answer the following code-related questions within the time limit. <br>
-            Keep in mind that incorrect answers
-            will penalize your score/time by 10 seconds!</p>
-        <button id="begin">Begin</button>
-    </div>
+    <div class="quiz-container" id="quiz">
+        <div class="home">
+            <h1>API Quiz Challenge</h1>
+            <p>Lets test your Javascript knowledge. <br>
+                Try to answer the following code-related questions within the time limit. <br>
+                Keep in mind that incorrect answers
+                will penalize your score/time by 10 seconds!</p>
+            <button class="button" id="start">Begin</button>
+        </div>
 
-    <div id="question" class="hide">
-        <h2 id="question-title"> </h2>
-        <div id="question-options" class="choices"></div>
-    </div> 
+        <div id="questions" class="hide">
+            <h2 id="question-title"> </h2>
+            <div id="question-options" class="choices"></div>
+        </div>
 
-    <div id="end" class="hide">
-        <h2> Time's up!</h2>
-        <p> Your final score is: <span id="final-score"></span></p>
-        <section>
-            Enter your first and last initials below 👇 <br>
-            <input type="text" id="initials" max="2"><br>
-            <button id="begin">Submit</button>
-        </section>
+        <div id="end" class="hide">
+            <h2> Time's up!</h2>
+            <p> Your final score is: <span id="final-score"></span></p>
+            <section>
+                Enter your first and last initials below 👇 <br>
+                <input type="text" id="initials" max="2"><br>
+                <button class="button" id="submit">Submit</button>
+            </section>
+        </div>
+
+        <div id="feedback" class="feedback-hide"> </div>
     </div>
+    <script src="./script.js"></script>
+</body>
 
 <footer>
     This game was created by Matthew Delgado ~ Thank you for playing.
 </footer>
-
-    <script src="./script.js"></script>
-</body>
 
 </html>
