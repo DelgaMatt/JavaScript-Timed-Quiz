@@ -69,9 +69,6 @@ body{
 .home {
     padding: 25px;
     border: var(--border);
-}
-
-.home {
     position: relative;
 }
 
@@ -96,6 +93,26 @@ button {
     background-color: rgb(90, 248, 248);
     /* font-weight: bold; */
 }
+
+#questions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 50px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
 
 #end {
     text-align: center;

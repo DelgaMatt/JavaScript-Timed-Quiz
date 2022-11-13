@@ -17,6 +17,7 @@
 </header>
 
 <body>
+    <!-- home screen, quiz box container -->
     <div class="quiz-container" id="quiz">
         <div class="home">
             <h1>API Quiz Challenge</h1>
@@ -27,13 +28,23 @@
             <button id="start">Begin</button>
         </div>
 
+        <!-- questions section -->
         <div id="questions" class="hide">
-            <h2 id="question-title"> </h2>
-            <div id="choices" class="choices"></div>
+            <h2 id="question-title">Question </h2>
+                <ul>
+                    <li><button class="choice-buttons" id="Btn1">Option 1</button></li>
+                    <li><button class="choice-buttons" id="Btn2">Option 2</button></li>
+                    <li><button class="choice-buttons" id="Btn3">Option 3</button></li>
+                    <li><button class="choice-buttons" id="Btn4">Option 4</button></li>
+                </ul>
         </div>
 
+        <!-- Correct/Wrong feedback prompt -->
+        <div id="feedback" class="feedback-hide"> </div>
+
+        <!-- End screen/Final report/submit info -->
         <div id="end" class="hide">
-            <h2> Time's up!</h2>
+            <h2 id="finished">All done!</h2>
             <p> Your final score is: <span id="final-score"></span></p>
             <section>
                 Enter your first and last initials below 👇 <br>
@@ -41,8 +52,7 @@
                 <button class="button" id="submit">Submit</button>
             </section>
         </div>
-
-        <div id="feedback" class="feedback-hide"> </div>
+        
     </div>
     <script src="./script.js"></script>
 </body>
