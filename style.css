@@ -94,12 +94,13 @@ button {
     /* font-weight: bold; */
 }
 
-#questions {
+#question-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 ul {
     display: flex;
     list-style: none;
@@ -112,7 +113,6 @@ ul {
 li {
     margin-bottom: 10px;
 }
-
 
 #end {
     text-align: center;

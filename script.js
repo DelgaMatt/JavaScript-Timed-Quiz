@@ -18,8 +18,9 @@ var timerEl = document.querySelector("#timer");
 var homePage = document.querySelector("#home")
 
 var questionsEl = document.querySelector("#questions");
-var titleEl = document.querySelector("#question-title")
-var choicesEl = document.querySelectorAll("#choices");
+var titleEl = document.querySelector("#question_title")
+
+var choicesEl = document.querySelectorAll(".choices");
 var answerbtn1 = document.querySelector("#Btn1");
 var answerbtn2 = document.querySelector("#Btn2");
 var answerbtn3 = document.querySelector("#Btn3");
@@ -28,7 +29,7 @@ var feedbackEl = document.querySelector("#feedback");
 
 var submitBtn = document.querySelector("#submit");
 var initialsEl = document.querySelector("#initials");
-var clearBtn = document.querySelector("#clear-button");
+var clearBtn = document.querySelector("#clear_button");
 
 // quiz variables
 var secondsLeft = 10;
@@ -37,7 +38,7 @@ var questionCount = 1;
 var questionNumber = 0;
 
 // questions content
-var questions = [
+var questionList = [
     {
         title: "Inside which HTML element do we put the JavaScript?",
         choices: ["<script>", "<javascript>", "<js>", "<scripting>"],
@@ -80,13 +81,14 @@ startBtn.addEventListener("click", startQuiz);
 // startquiz function
 function startQuiz() {
     setTime();
+    // getQuestion();
+
+    var homePage = document.getElementById("home");
+        homePage.setAttribute("class", "hide");
+        questionsEl.removeAttribute("class");
+
     getQuestion();
-    var homePage = document.getElementById("home")
-    homePage.setAttribute("class", "hide");
-    questionsEl.removeAttribute("class");
 };
-
-
 
 // timer function
 function setTime() {
@@ -106,9 +108,19 @@ function setTime() {
 };
 
 // getquestion function
-function getQuestion() {
+    
 
-};
+// function getQuestion(n) {
+//     questionTitle.textContent = questionList[n].title;
+//     Btn1.textContent = questionList[n].choices[0];
+//     Btn2.textContent = questionList[n].choices[1];
+//     Btn3.textContent = questionList[n].choices[2];
+//     Btn4.textContent = questionList[n].choices[3];
+//     questionNumber = n;
+    
+// };
+
+
 
 // choiceselection function
 

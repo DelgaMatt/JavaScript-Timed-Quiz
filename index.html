@@ -19,7 +19,7 @@
 <body>
     <!-- home screen, quiz box container -->
     <div class="quiz-container" id="quiz">
-        <div class="home">
+        <div id="home">
             <h1>API Quiz Challenge</h1>
             <p>Lets test your Javascript knowledge. <br>
                 Try to answer the following code-related questions within the time limit. <br>
@@ -29,15 +29,15 @@
         </div>
 
         <!-- questions section -->
-        <div id="questions" class="hide">
-            <h2 id="question-title">Question </h2>
+        <section id="questions" class="hide">
+            <h2 id="question-title">Question</h2>
                 <ul>
-                    <li><button class="choice-buttons" id="Btn1">Option 1</button></li>
-                    <li><button class="choice-buttons" id="Btn2">Option 2</button></li>
-                    <li><button class="choice-buttons" id="Btn3">Option 3</button></li>
-                    <li><button class="choice-buttons" id="Btn4">Option 4</button></li>
+                    <li><button class="choices" id="Btn1" value="a">Option 1</button></li>
+                    <li><button class="choices" id="Btn2" value="b">Option 2</button></li>
+                    <li><button class="choices" id="Btn3" value="c">Option 3</button></li>
+                    <li><button class="choices" id="Btn4" value="d">Option 4</button></li>
                 </ul>
-        </div>
+        </section>
 
         <!-- Correct/Wrong feedback prompt -->
         <div id="feedback" class="feedback-hide"> </div>
